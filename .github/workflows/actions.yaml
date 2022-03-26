@@ -11,3 +11,10 @@ jobs:
       - run: |
           echo "Time: ${{ steps.hello.outputs.time }}"
           echo $HELLO
+      - uses: ./.github/actions/hello-docker
+        id: hellodocker
+        with:
+          who-to-greet: "PP(from docker)"
+      - run: |
+          echo "Time: ${{ steps.hellodocker.outputs.time }}"
+          echo $HELLO
