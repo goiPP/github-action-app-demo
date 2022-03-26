@@ -1,6 +1,6 @@
 module.exports = {
   branches: "master",
-  repositoryUrl: "https://github.com/alialaa/react-app",
+  repositoryUrl: "https://github.com/goiPP/github-action-app-demo",
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
